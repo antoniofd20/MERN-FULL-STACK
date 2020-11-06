@@ -1,0 +1,43 @@
+MERN FULL STACK
+
+¿Que es MERN?
+
+-> MongoDB
+-> Express
+-> React
+-> Node.JS
+
+Ventajas de MERN
+
+- Todo el código tanto del FrontEnd como BackEnd será hecho con JavaScript.
+- Separación de BackEnd y FrontEnd, conectado por JSON (Independiente de la base de datos)
+- NPM para dependencias.
+- Performance de Node.
+- La velocidad de React.
+- No es un Framework.
+
+----------Iniciamos--------------
+
+npx create-react-app cliente
+
+cd cliente
+
+npm i react-router-dom
+
+-> Se importa de la siguiente manera en el app.js
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+-> Despues se crea una estructura similar a la siguiente, donde el path es la ruta que tendrá cada ventana y el component a donde va ir dirigida:
+
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={login} />
+        <Route exact path="/nueva-cuenta" component={NuevaCuenta} />
+        <Route exact path="/proyectos" component={Proyectos} />
+      </Switch>
+    </Router>
+  );
+}
