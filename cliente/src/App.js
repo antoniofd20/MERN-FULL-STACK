@@ -28,4 +28,4 @@ function App() {
 export default App;
 
 
-// video 8 carpeta 19 https://mega.nz/folder/NigAnKaB#2uGl78a19MRo6zSnkt2HoA/folder/wnoH1SRD
+// video 12 carpeta 19 https://mega.nz/folder/NigAnKaB#2uGl78a19MRo6zSnkt2HoA/folder/wnoH1SRD
