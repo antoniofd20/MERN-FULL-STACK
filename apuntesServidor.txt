@@ -1,0 +1,16 @@
+-> Crear una carpeta 'servidor' a la altura de 'cliente'
+
+dentro de la carpeta ejecutar 
+
+    $ npm init
+    $ npm install -D nodemon
+    $ npm i express mongoose dotenv
+
+Agregar las siguientes dos lineas dentro de los scripts de package.json
+    
+    "start": "node .",
+    "dev": "nodemon ."
+    
+Crear un archivo 'index.js' en servidor y colocar un console.log para probar, corremos en terminal con lo siguiente:
+
+    $ npm run dev
