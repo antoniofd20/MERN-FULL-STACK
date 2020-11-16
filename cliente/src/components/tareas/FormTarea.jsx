@@ -3,8 +3,6 @@ import React, { useContext, useState, useEffect } from 'react'
 import proyectoContext from '../../context/proyectos/proyectoContext';
 import TareaContext from '../../context/tareas/tareaContext';
 
-import { v4 as uuidv4 } from 'uuid';
-
 const FormTarea = () => {
     
     // Extraer si un proyecto esta activo
@@ -61,9 +59,7 @@ const FormTarea = () => {
         if(tareaseleccionada === null) {
             // Tarea nueva
             // Agregar la nueva tarea al state de tareas
-            tarea.proyectoId = proyectoActual.id;
-            tarea.estado = false;
-            tarea.id = uuidv4();
+            tarea.proyecto = proyectoActual._id;
             agregarTarea(tarea);
         } else {
             // Actualizar tarea existente
